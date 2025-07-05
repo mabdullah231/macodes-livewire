@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+:root {
+    --bgPrimary: #111723;
+    --textPrimary: #f12e8e;
+    --textSecondary: #5daeff;
+    --textWhite: #fffeff;
+    --textGray: #fcffff;
+    --borderColor: #373f4c;
+    --workCardBg: #101622;
+}
+
+.gradient-text {
+    background: linear-gradient(
+        to right,
+        var(--textPrimary),
+        var(--textSecondary)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+body {
+    background-color: var(--bgPrimary) !important;
+}
+
+.bg-primary {
+    background-color: var(--bgPrimary) !important;
+}
+
+.text-primary {
+    color: var(--textPrimary) !important;
+}
+
+.text-secondary {
+    color: var(--textSecondary) !important;
+}
+
+.hover\:text-secondary:hover {
+    color: var(--textSecondary) !important;
+}
+.hover\:text-primary:hover {
+    color: var(--textPrimary) !important;
+}
+
+.text-mono-primary {
+    color: var(--textWhite) !important;
+}
+
+.text-mono-secondary {
+    color: var(--textGray) !important;
+}
+
+.border-color {
+    border-color: var(--borderColor) !important;
+}
+
+.hover\:border-gradient:hover {
+    border: 2px solid var(--textPrimary);
+}
+
+.border-hidden-color {
+    border-color: var(--bgPrimary) !important;
+}
+
+.work-card-bg {
+    background-color: var(--workCardBg) !important;
+}
+
+/* Padding classes */
+.section-vertical-padding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section-horizontal-padding {
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+
+.gradient-outline-btn {
+    /* Base styles */
+    position: relative;
+    background: transparent;
+    color: white;
+    border: none;
+
+    border-radius: 30px;
+    cursor: pointer;
+    isolation: isolate; /* Creates new stacking context */
+    transition: color 0.3s ease;
+}
+
+.gradient-outline-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    background: linear-gradient(
+        to right,
+        var(--textPrimary),
+        var(--textSecondary)
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+    transition: all 0.3s ease;
+    padding: 2px; /* Border thickness */
+}
+
+.gradient-outline-btn:hover::before {
+    padding: 3px;
+    background: linear-gradient(
+        to right,
+        var(--textSecondary),
+        var(--textPrimary)
+    );
+}

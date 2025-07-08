@@ -9,7 +9,7 @@ class Navbar extends Component
     public $brand; // Declare the property
     public $navLinks; // Declare the property
     public $open = false; // Declare the property
-    
+
     public function toggle()
     {
         $this->open = !$this->open;
@@ -22,19 +22,19 @@ class Navbar extends Component
         $this->navLinks = [
             (object) [
                 'name' => 'Services',
-                'link' => '/services'
+                'link' => 'services'
             ],
             (object) [
                 'name' => 'Technologies',
-                'link' => '/technologies'
+                'link' => 'skills'
             ],
             (object) [
                 'name' => 'Portfolio',
-                'link' => '/portfolio'
+                'link' => 'portfolio'
             ],
             (object) [
                 'name' => 'Contact',
-                'link' => '/contact'
+                'link' => 'contact'
             ]
         ];
     }

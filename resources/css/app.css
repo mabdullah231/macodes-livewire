@@ -179,3 +179,7 @@ body {
         /* slightly darker than #5daeff */ var(--serviceCardBgSecondary)
     );
 }
+
+html{
+    scroll-behavior: smooth;
+}

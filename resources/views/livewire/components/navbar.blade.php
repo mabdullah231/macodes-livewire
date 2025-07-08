@@ -1,4 +1,4 @@
-<div class="section-horizontal-padding pt-[4vh]">
+<div id="header" class="section-horizontal-padding pt-[4vh]">
     <header class="border-[2px] border-color rounded-2xl w-full py-6 px-6 flex justify-between items-center">
         <!-- Brand -->
         <h3

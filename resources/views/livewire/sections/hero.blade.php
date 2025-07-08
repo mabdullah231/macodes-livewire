@@ -16,8 +16,8 @@
                 based applications.
             </p>
 
-            <button class="gradient-outline-btn transition px-[2rem] sm:px-[3rem] py-3 uppercase text-sm">View My
-                Work</button>
+            <a href="#portfolio" class="gradient-outline-btn transition px-[2rem] sm:px-[3rem] py-3 uppercase text-sm">View My
+                Work</a>
         </div>
 
         <div class="relative flex items-center mt-5 justify-center order-1 md:order-2"> <!-- Added order classes -->

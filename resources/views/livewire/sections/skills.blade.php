@@ -1,4 +1,4 @@
-<div
+<div id="skills"
     class="section-horizontal-padding section-vertical-padding relative skills-gradient overflow-hidden border-b-2 border-color">
     <h3 class="text-2xl sm:text-3xl md:text-5xl uppercase space-y-4 services-gradient-text font-small">
         {{ $skill_heading }}</h3>

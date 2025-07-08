@@ -6,3 +6,5 @@
 <livewire:sections.portfolio />
 <livewire:sections.contact />
 <livewire:components.footer />
+<livewire:components.scroll-to-top />
+

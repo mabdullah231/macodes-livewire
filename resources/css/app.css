@@ -13,17 +13,29 @@
 
 :root {
     --bgPrimary: #111723;
-    --textPrimary: #f12e8e;
     --textSecondary: #5daeff;
+    --serviceCardBgPrimary: #1c2936;
+    --serviceCardBgSecondary: #101622;
+    --textPrimary: #f12e8e;
     --textWhite: #fffeff;
     --textGray: #fcffff;
     --borderColor: #373f4c;
-    --workCardBg: #101622;
 }
 
-.gradient-text {
+.hero-gradient-text {
     background: linear-gradient(
         to right,
+        var(--textPrimary),
+        var(--textSecondary)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.services-gradient-text {
+    background: linear-gradient(
+        to right bottom,
         var(--textPrimary),
         var(--textSecondary)
     );
@@ -82,13 +94,38 @@ body {
 
 /* Padding classes */
 .section-vertical-padding {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .section-horizontal-padding {
     padding-left: 9vw;
     padding-right: 9vw;
+}
+
+@media (max-width: 1024px) {
+    .section-vertical-padding {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+
+    .section-horizontal-padding {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+}
+
+/* Small screens (phones: ≤ 640px) */
+@media (max-width: 640px) {
+    .section-vertical-padding {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .section-horizontal-padding {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
 }
 
 .gradient-outline-btn {
@@ -132,5 +169,13 @@ body {
         to right,
         var(--textSecondary),
         var(--textPrimary)
+    );
+}
+
+.service-card-gradient {
+    background: linear-gradient(
+        to bottom right,
+        var(--serviceCardBgPrimary),
+        /* slightly darker than #5daeff */ var(--serviceCardBgSecondary)
     );
 }

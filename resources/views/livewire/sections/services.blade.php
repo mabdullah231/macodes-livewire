@@ -6,11 +6,17 @@
             <div class="absolute top-0 bottom-0 left-1/2 w-px bg-gray-700 z-0"></div>
 
             @foreach ($services as $index => $service)
-                <div
+                {{-- <div
                     class="relative z-10 w-full max-w-xl px-4 sm:px-0
-                {{ $index % 2 == 0 ? 'sm:ml-8 sm:mr-auto text-left' : 'sm:ml-auto sm:mr-8 text-left' }}">
+                {{ $index % 2 == 0 ? ' text-left ml-[-24rem]' : 'mr-[-24rem] text-left' }}">
                     <livewire:components.servicecard :service="$service" />
-                </div>
+                </div> --}}
+                <div
+    class="relative z-10 w-full max-w-xl px-4 sm:px-0
+    {{ $index % 2 == 0 ? 'text-left lg:ml-[-24rem] ml-0' : 'text-left lg:mr-[-24rem] mr-0' }}">
+    <livewire:components.servicecard :service="$service" />
+</div>
+
             @endforeach
         </div>
         <style>

@@ -7,7 +7,7 @@
     <title>{{ config('app.name', 'My Portfolio') }}</title>
 
     {{-- Vite: Tailwind CSS + JS --}}
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['macodes/public/resources/css/app.css', 'macodes/public/resources/js/app.js'])
 
     {{-- Livewire --}}
     @livewireStyles

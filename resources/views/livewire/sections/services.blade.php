@@ -1,4 +1,5 @@
-<div id="services" class="section-horizontal-padding section-vertical-padding relative services-gradient overflow-hidden border-b-2 border-color">
+<div id="services"
+    class="section-horizontal-padding section-vertical-padding relative services-gradient overflow-hidden border-b-2 border-color">
     <h3 class="text-2xl sm:text-3xl md:text-5xl uppercase space-y-4 services-gradient-text font-small">
         {{ $heading }}</h3>
     <div class="services mt-[5rem]">
@@ -6,17 +7,11 @@
             <div class="absolute top-0 bottom-0 left-1/2 w-px bg-gray-700 z-0"></div>
 
             @foreach ($services as $index => $service)
-                {{-- <div
-                    class="relative z-10 w-full max-w-xl px-4 sm:px-0
-                {{ $index % 2 == 0 ? ' text-left ml-[-24rem]' : 'mr-[-24rem] text-left' }}">
-                    <livewire:components.servicecard :service="$service" />
-                </div> --}}
                 <div
-    class="relative z-10 w-full max-w-xl px-4 sm:px-0
+                    class="relative z-10 w-full max-w-xl px-4 sm:px-0
     {{ $index % 2 == 0 ? 'text-left lg:ml-[-24rem] ml-0' : 'text-left lg:mr-[-24rem] mr-0' }}">
-    <livewire:components.servicecard :service="$service" />
-</div>
-
+                    <livewire:components.servicecard :service="$service" />
+                </div>
             @endforeach
         </div>
         <style>

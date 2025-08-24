@@ -183,3 +183,23 @@ body {
 html{
     scroll-behavior: smooth;
 }
+
+@keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-up {
+    opacity: 0; /* start hidden */
+    transform: translateY(70px);
+    transition: opacity 1.2s ease-out, transform 1s ease-out;
+  }
+  .animate-fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+  }

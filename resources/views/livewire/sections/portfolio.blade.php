@@ -1,4 +1,4 @@
-<div id="portfolio" class="section-horizontal-padding section-vertical-padding relative overflow-hidden border-[2px] border-color">
+<div id="portfolio" class="animate-fade-up section-horizontal-padding section-vertical-padding relative overflow-hidden border-[2px] border-color">
     <h3 class="text-2xl sm:text-3xl md:text-5xl uppercase space-y-4 services-gradient-text font-small">
         {{ $portfolio_heading }}</h3>
         @livewire('components.portfolio-card')

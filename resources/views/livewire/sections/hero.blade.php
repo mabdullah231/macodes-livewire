@@ -1,5 +1,5 @@
-<div class="md:pl-[9vw] md:pr-0 px-[6vw] md:pt-[3rem] pt-[0rem]  relative gradient-bg border-b-2 border-color">
-    <div class="mx-auto grid min-h-[35rem] grid-cols-1 md:grid-cols-2 items-end gap-0 md:gap-5">
+<div class="md:pl-[9vw] md:pr-0 px-[6vw] md:pt-[3rem] pt-[0rem]  relative grad  ient-bg border-b-2 border-color">
+    <div class="animate-fade-up mx-auto grid min-h-[35rem] grid-cols-1 md:grid-cols-2 items-end gap-0 md:gap-5">
         <!-- Changed items-center to items-end -->
         {{-- Left Side --}}
         <div
@@ -80,50 +80,6 @@
 <!-- Script remains exactly the same -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const typedText = document.getElementById('typed-text');
-        const roles = ['SaaS Solution', 'AI Chatbot', 'AI Agents', 'Full Stack'];
-        let roleIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        let typingTimeout;
 
-        // Initialize with &nbsp; to prevent empty space
-        typedText.innerHTML = '&nbsp;';
-
-        function type() {
-            const currentRole = roles[roleIndex];
-            let displayText;
-
-            if (isDeleting) {
-                charIndex--;
-                displayText = currentRole.substring(0, charIndex);
-            } else {
-                charIndex++;
-                displayText = currentRole.substring(0, charIndex);
-            }
-
-            // Use innerHTML and fallback to &nbsp; when empty
-            typedText.innerHTML = displayText || '&nbsp;';
-
-            if (!isDeleting && charIndex < currentRole.length) {
-                typingTimeout = setTimeout(type, 100);
-            } else if (isDeleting && charIndex > 0) {
-                typingTimeout = setTimeout(type, 50);
-            } else {
-                isDeleting = !isDeleting;
-                if (!isDeleting) {
-                    roleIndex = (roleIndex + 1) % roles.length;
-                }
-                typingTimeout = setTimeout(type, isDeleting ? 1500 : 500);
-            }
-        }
-
-        type();
-
-        // Clean up on Livewire updates
-        document.addEventListener('livewire:update', function() {
-            clearTimeout(typingTimeout);
-            typedText.innerHTML = '&nbsp;'; // Reset to &nbsp; on update
-        });
     });
 </script>

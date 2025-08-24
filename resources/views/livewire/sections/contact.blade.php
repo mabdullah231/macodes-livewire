@@ -4,7 +4,7 @@
     $headingWithoutLast = implode(' ', $words);
 @endphp
 
-<div id="contact" class="section-horizontal-padding section-vertical-padding relative overflow-hidden">
+<div id="contact" class="animate-fade-up section-horizontal-padding section-vertical-padding relative overflow-hidden">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         <!-- Left: Heading -->
         <div class="space-y-4 px-6">
@@ -38,7 +38,7 @@
                     <div class="flex items-center space-x-4 text-xl mt-4">
                         <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/macodes/" target="_blank"
-                            class="hover:text-blue-500 text-mono-secondary" aria-label="Linkedin">
+                            class="text-mono-secondary transition-transform duration-300 hover:scale-110" aria-label="Linkedin">
                             <svg class="w-6 h-6 text-mono-secondary" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 viewBox="0 0 24 24">
@@ -52,7 +52,7 @@
 
                         <!-- Whatsapp -->
                         <a href="https://wa.me/923234183909" target="_blank"
-                            class="hover:text-blue-500 text-mono-secondary" aria-label="Whatsapp">
+                            class=" text-mono-secondary transition-transform duration-300 hover:scale-110" aria-label="Whatsapp">
                             <svg class="w-6 h-6 text-mono-secondary" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                 viewBox="0 0 24 24">
@@ -68,7 +68,7 @@
 
                         <!-- Github -->
                         <a href="https://github.com/mabdullah231" target="_blank"
-                            class="hover:text-green-500 text-mono-secondary" aria-label="Github">
+                            class="text-mono-secondary transition-transform duration-300 hover:scale-110" aria-label="Github">
                             <svg class="w-6 h-6 text-mono-secondary" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 viewBox="0 0 24 24">
@@ -97,21 +97,28 @@
                 <div class="space-y-2">
                     <label for="name" class="block text-sm font-medium text-white">Name</label>
                     <input type="text" id="name" name="name"
-                        class="w-full mt-1 text-mono-secondary p-2 border-[1.5px] border-color rounded-2xl" />
+                        class="w-full mt-1 text-mono-secondary p-2 border-[1.5px] border-color rounded-2xl 
+                               transition duration-300 ease-in-out 
+                               hover:border-white hover:shadow-[0_0_10px_rgba(255,255,255,0.6)]" />
                 </div>
                 <div class="space-y-2">
                     <label for="email" class="block text-sm font-medium text-white">Email</label>
                     <input type="email" id="email" name="email"
-                        class="w-full mt-1 text-mono-secondary p-2 border-[1.5px] border-color rounded-2xl" />
+                        class="w-full mt-1 text-mono-secondary p-2 border-[1.5px] border-color rounded-2xl 
+                               transition duration-300 ease-in-out 
+                               hover:border-white hover:shadow-[0_0_10px_rgba(255,255,255,0.6)]" />
                 </div>
                 <div class="space-y-2">
                     <label for="message" class="block text-sm font-medium text-white">Message</label>
                     <input type="text" id="message" name="message"
-                        class="w-full mt-1 text-mono-secondary p-2 border-[1.5px] border-color rounded-2xl" />
+                        class="w-full mt-1 text-mono-secondary p-2 border-[1.5px] border-color rounded-2xl 
+                               transition duration-300 ease-in-out 
+                               hover:border-white hover:shadow-[0_0_10px_rgba(255,255,255,0.6)]" />
                 </div>
                 <button
                     class="gradient-outline-btn mt-2 transition px-[3rem] sm:px-[4rem] py-3 uppercase text-sm">Send</button>
             </form>
+            
         </div>
         <style>
             #contact::before {

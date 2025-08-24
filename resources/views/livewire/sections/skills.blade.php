@@ -1,5 +1,5 @@
 <div id="skills"
-    class="section-horizontal-padding section-vertical-padding relative skills-gradient overflow-hidden border-b-2 border-color">
+    class="animate-fade-up section-horizontal-padding section-vertical-padding relative skills-gradient overflow-hidden border-b-2 border-color">
     <h3 class="text-2xl sm:text-3xl md:text-5xl uppercase space-y-4 services-gradient-text font-small">
         {{ $skill_heading }}</h3>
     <div class="skills mt-[5rem]">
@@ -9,9 +9,16 @@
 
         <div class="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
             @foreach ($skills as $skill)
-                <img src="{{ $skill }}" alt="Skill logo" class="w-16 h-16 object-contain" />
+                <div class="relative group">
+                    <img src="{{ $skill }}" alt="Skill logo"
+                        class="w-16 h-16 object-contain transition-transform duration-300 group-hover:scale-110 relative z-10" />
+                    
+                    <!-- Glow effect -->
+                    <div class="absolute inset-0 rounded-lg bg-white/10 blur-md opacity-0 group-hover:opacity-100 transition duration-300 z-0"></div>
+                </div>
             @endforeach
         </div>
+        
         <style>
             .skills-gradient::before {
                 content: '';

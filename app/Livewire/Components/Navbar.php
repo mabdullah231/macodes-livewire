@@ -3,45 +3,63 @@
 namespace App\Livewire\Components;
 
 use Livewire\Component;
+use Illuminate\Support\Facades\Request; // to check current path
 
 class Navbar extends Component
 {
-    public $brand; // Declare the property
-    public $navLinks; // Declare the property
-    public $open = false; // Declare the property
-
-    public function toggle()
-    {
-        $this->open = !$this->open;
-    }
+    public $brand;
+    public $navLinks = [];
 
     public function mount()
     {
-        // Initialize the brand variable when the component is mounted
         $this->brand = 'MA Codes';
-        $this->navLinks = [
-            (object) [
-                'name' => 'Services',
-                'link' => 'services'
-            ],
-            (object) [
-                'name' => 'Technologies',
-                'link' => 'skills'
-            ],
-            (object) [
-                'name' => 'Portfolio',
-                'link' => 'portfolio'
-            ],
-            (object) [
-                'name' => 'Contact',
-                'link' => 'contact'
-            ]
-        ];
+
+        // ✅ Check if URL matches services/{slug}
+        if (Request::is('services/*')) {
+            // Only show Home and Use Cases on services pages
+            $this->navLinks = [
+                (object) [
+                    'name' => 'Home',
+                    'link' => '/',
+                    'isPage' => true // This should navigate to a different page
+                ],
+                (object) [
+                    'name' => 'Use Cases',
+                    'link' => '#usecases', // anchor link inside services page
+                    'isPage' => false
+                ]
+            ];
+        } else {
+            // Default nav links - check if we're on homepage for section scrolling
+            $isHomepage = Request::is('/') || Request::is('');
+            
+            $this->navLinks = [
+                (object) [
+                    'name' => 'Services',
+                    'link' => $isHomepage ? '#services' : '/services',
+                    'isPage' => !$isHomepage
+                ],
+                (object) [
+                    'name' => 'Technologies',
+                    'link' => $isHomepage ? '#skills' : '/#skills',
+                    'isPage' => !$isHomepage
+                ],
+                (object) [
+                    'name' => 'Portfolio',
+                    'link' => $isHomepage ? '#portfolio' : '/#portfolio',
+                    'isPage' => !$isHomepage
+                ],
+                (object) [
+                    'name' => 'Contact',
+                    'link' => $isHomepage ? '#contact' : '/#contact',
+                    'isPage' => !$isHomepage
+                ]
+            ];
+        }
     }
 
     public function render()
     {
-        // Pass the $brand variable to the view
         return view('livewire.components.navbar', [
             'brand' => $this->brand,
             'navLinks' => $this->navLinks,

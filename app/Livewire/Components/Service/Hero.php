@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Livewire\Sections;
+namespace App\Livewire\Components\Service;
 
 use Livewire\Component;
 
 class Hero extends Component
 {
+    public $service;
 
     public function mount()
     {
@@ -15,7 +16,6 @@ class Hero extends Component
 
     public function render()
     {
-
-        return view('livewire.sections.hero');
+        return view('livewire.components.service.hero');
     }
 }

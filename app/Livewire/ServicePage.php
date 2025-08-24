@@ -16,9 +16,9 @@ class ServicePage extends Component
         $services = [
             'web-app-development' => [
                 'title' => 'Web App Development',
-                'description' => 'Robust, secure, and scalable web applications built with modern stacks like React, Vue, Laravel, and FastAPI.',
-                'keywords'=> 'Web App Development, React, Vue, Laravel, FastAPI, Scalable Applications, Secure Authentication, Real-time Features, Enterprise Dashboards, Custom CRMs',
-                'details' => 'Beyond just code, I craft experiences. From designing pixel-perfect UIs to implementing real-time interactivity, my web apps are engineered for performance and scalability. I ensure secure authentication, optimized database design, and seamless API integrations. Whether it’s a lean MVP or a complex enterprise dashboard, each project is tailored to deliver long-term maintainability and growth.',
+                'description' => 'Efficient, secure, and scalable web applications built with modern stacks like React, Vue, Laravel, and FastAPI.',
+                'keywords'=> 'Web App Development, React, Vue, Laravel, FastAPI, Scalable Applications, Secure multi-role Authentication, Real-time Features, Enterprise Dashboards, Custom CRMs',
+                'details' => 'Aprt from code, I craft experiences. From designing pixel-perfect UIs to implementing real-time interactivity, my web apps are developed for performance and scalability. I ensure secure multi-role authentication, normalized database design, and seamless API integrations. Whether it’s a basic MVP or a complex enterprise dashboard, each project is tailored to deliver long-term maintainability and growth.',
                 'highlights' => [
                     'Pixel-perfect UI/UX',
                     'Real-time features',
@@ -36,7 +36,7 @@ class ServicePage extends Component
                 'title' => 'SaaS App Solutions',
                 'description' => 'End-to-end SaaS platform development including subscription billing, authentication, admin dashboards, and multi-tenancy.',
                 'keywords'=> 'SaaS Development, Multi-Tenancy, Subscription Billing, Admin Dashboards, Scalable Architecture, SaaS Platforms, CRM, Analytics Dashboards',
-                'details' => 'Building SaaS is not just about writing features — it’s about designing for scale, reliability, and user experience. I develop platforms that include secure billing, multi-tenant architecture, and intuitive admin panels. My approach ensures that your product can start lean as an MVP and evolve into a full-featured enterprise SaaS. With modular architecture, every component is ready for upgrades, integrations, and future growth.',
+                'details' => 'Building SaaS is more than just writing features — it’s about coding for scale, reliability, and user experience. I develop platforms that include secure billing, multi-tenant architecture, and interactive admin panels. My methodlogy ensures that your product can start as an MVP and revolutionize into a fully-fledged enterprise SaaS. With modular architecture, every component is ready for upgrades, integrations, and future growth.',
                 'highlights' => [
                     'Subscription billing',
                     'Multi-tenancy',
@@ -52,9 +52,9 @@ class ServicePage extends Component
             ],
             'chatbot-integration' => [
                 'title' => 'Chatbot Integration',
-                'description' => 'AI-powered chatbot development using OpenAI (GPT-5), Gemini, Claude, and Grok.',
+                'description' => 'Chatbot development powered by OpenAI (GPT-5, GPT-4), Gemini, Claude, and Grok.',
                 'keywords' => 'Chatbot Development, AI Chatbots, OpenAI, Gemini, Claude, Grok, RAG Pipelines, Vector Search, CRM Integration, Customer Support Bots, E-commerce Assistants',
-                'details' => 'Chatbots today are more than scripted replies — they’re intelligent assistants. I design bots with custom RAG pipelines, vector search, and knowledge retrieval systems to provide human-like interactions. Whether connected to your CRM, e-commerce platform, or internal database, these assistants improve customer experience and reduce support overhead. Every integration is tailored to your workflows so the chatbot becomes a natural extension of your team.',
+                'details' => 'Chatbots today are more than casual replies — they’re smart assistants. I code bots with custom RAG pipelines, vector search, and knowledge-based systems to provide humanistic interactions. Be it connected to your CRM, e-commerce platform, or internal database, these assistants improve customer experience and reduce support load. Every integration is tailored to your workflows so the chatbot becomes a natural extension of your team.',
                 'highlights' => [
                     'OpenAI & Gemini',
                     'RAG pipelines',
@@ -72,7 +72,7 @@ class ServicePage extends Component
                 'title' => 'AI Automation Tools',
                 'description' => 'Custom tools powered by AI agents, autonomous workflows, and automation scripts.',
                 'keywords' => 'AI Automation, AI Agents, Workflow Automation, Autonomous Tools, Custom Integrations, HR Assistants, Sales Automation, AI Report Generation, Voice-enabled Support',
-                'details' => 'AI is not just about answering questions — it’s about automating real work. I build AI-powered tools and agents that streamline repetitive tasks, generate reports, and even handle real-time communications. These solutions integrate with your existing systems, from HR to sales pipelines, enabling teams to focus on strategy instead of manual work. With automation-first design, efficiency gains are built into every workflow.',
+                'details' => 'AI is not all about answering questions - it’s meant to automate real work. I build AI-powered tools and agents that streamline routine tasks, generate reports, and handle real-time communications. The solutions that can integrate with your existing systems, from HR to sales pipelines, enabling teams to focus on strategy instead of repetitive manual work. With automation-first design, productivity gains are built into every workflow.',
                 'highlights' => [
                     'AI Agents',
                     'Workflow Automation',

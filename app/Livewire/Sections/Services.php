@@ -20,7 +20,7 @@ class Services extends Component
                   </svg>',
                 'title' => 'Web App Development',
                 'slug' => 'web-app-development',
-                'description' => 'Robust, secure, and scalable web applications built with modern stacks like React, Vue, Laravel, and FastAPI. I deliver pixel-perfect UIs, real-time interactivity, and backend APIs optimized for performance and growth.',
+                'description' => 'Efficient, secure, and scalable web applications powered by modern stacks like React, Vue, Laravel, and FastAPI. I deliver pixel-perfect UIs with real-time interactivity, and backend optimized for performance and growth.',
             ],
             [
                 'svg' => '<svg class="w-8 h-7 text-secondary" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -30,7 +30,7 @@ class Services extends Component
                          </svg>',
                 'title' => 'SaaS App Solutions',
                 'slug' => 'saas-app-solutions',
-                'description' => 'End-to-end SaaS platform development including subscription billing, authentication, admin dashboards, multi-tenancy, and deployment — everything to launch and scale your SaaS product confidently.',
+                'description' => 'End-to-end SaaS platform development including subscription billing, mutlti-role authentication, admin panels, multi-tenancy, and deployment - everything to launch and scale your SaaS product efficiently.',
             ],
             [
                 'svg' => '<svg class="w-8 h-8 text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -39,7 +39,7 @@ class Services extends Component
 </svg>',
                 'title' => 'Chatbot Integration',
                 'slug' => 'chatbot-integration',
-                'description' => 'AI-powered chatbot development using OpenAI (GPT-5), Gemini, Claude, and Grok. Custom RAG pipelines, vector search (Pinecone, PostgreSQL), and seamless CRM or support integration.',
+                'description' => 'Chatbot development powered by OpenAI (GPT-5, GPT-4), Gemini, Claude, and Grok. Personalized RAG pipelines, vector search (Pinecone, PostgreSQL), and seamless CRM or support integration.',
             ],
             [
                 'svg' => '<svg class="w-7 h-8 text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -48,7 +48,7 @@ class Services extends Component
 </svg>',
                 'title' => 'AI Automation Tools',
                 'slug' => 'ai-automation-tools',
-                'description' => 'Custom tools powered by AI agents (LangChain, CrewAI), autonomous workflows, voicebots (Speech-to-Text, ElevenLabs, VAPI), and automation scripts to boost efficiency in sales, support, HR, and operations.',
+                'description' => 'Tailored tools powered by AI agents (LangChain, CrewAI), autonomous workflows, voice bots (Speech-to-Text, ElevenLabs, VAPI), and automation scripts to boost results in sales, support, HR, and operations.',
             ],
         ];
     }

@@ -28,11 +28,11 @@
             <!-- Container for aligned images -->
             <div class="relative w-full h-full flex items-end justify-center">
                 <!-- Raster image (behind vector) -->
-                <img src="/images/heroRaster.png" alt="Hero Raster"
+                <img src="{{ asset('images/heroRaster.png') }}" alt="Hero Raster"
                     class="absolute h-[90%] object-contain object-center opacity-50 z-10">
 
                 <!-- Vector image (yourself on top) -->
-                <img src="{{ asset('images/heroVector.png') }}" alt="Hero Vector"
+                <img src="{{ asset('images/HeroVector.png') }}" alt="Hero Vector"
                     class="relative z-20 w-full md:h-[35rem] h-[25rem] object-contain">
             </div>
         </div>

@@ -10,7 +10,7 @@
                 <div
                     class="relative z-10 w-full max-w-xl px-4 sm:px-0
     {{ $index % 2 == 0 ? 'text-left lg:ml-[-24rem] ml-0' : 'text-left lg:mr-[-24rem] mr-0' }}">
-                    <livewire:components.servicecard :service="$service" />
+                    <livewire:components.service-card :service="$service" />
                 </div>
             @endforeach
         </div>

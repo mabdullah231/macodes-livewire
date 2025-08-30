@@ -14,6 +14,6 @@ class ServiceCard extends Component
     }
     public function render()
     {
-        return view('livewire.components.servicecard');
+        return view('livewire.components.service-card');
     }
 }

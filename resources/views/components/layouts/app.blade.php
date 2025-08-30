@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{-- <title>{{ config('app.name', 'My Portfolio') }}</title> --}}
     @stack('head')
-    @vite(['public/resources/css/app.css', 'public/resources/js/app.js'])
-    <link rel="icon" type="image/x-icon" href="{{ Vite::asset('public/resources/logo.ico') }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="icon" type="image/x-icon" href="public/LOGO.ico">
     @livewireStyles
 </head>
 
